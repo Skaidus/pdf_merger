@@ -1,0 +1,30 @@
+fix = true
+line-length = 320
+indent-width = 4
+exclude = [".venv"]
+respect-gitignore = false
+
+[format]
+docstring-code-line-length = 88
+docstring-code-format = true
+skip-magic-trailing-comma = false
+quote-style = "double"
+indent-style = "space"
+
+[lint]
+select = [
+    "D",   # Documentation rules
+    "RUF", # Ruff specific rules
+    "PTH", # Path rules
+]
+extend-select = [
+    "E501", # Warn about long lines
+    "W291", # Trailing whitespace
+    "F401", # Unused imports
+]
+
+[lint.pydocstyle]
+convention = "google" # Use Google-style docstrings.
+
+[lint.pycodestyle]
+max-line-length = 120 # Warn about long lines

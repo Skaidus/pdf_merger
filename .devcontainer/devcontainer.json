@@ -1,0 +1,24 @@
+{
+  "name": "UV Devcontainer",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+                "njpwerner.autodocstring",
+                "fill-labs.dependi",
+
+                "ms-python.isort",
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "ms-python.debugpy",
+                "ms-toolsai.jupyter",
+
+                "charliermarsh.ruff",
+                "tamasfe.even-better-toml"
+        ]
+    }
+  },
+	"image": "ghcr.io/astral-sh/uv:python3.12-bookworm-slim",
+	"features": {
+			"ghcr.io/devcontainers/features/git:1": {}
+	}
+}
